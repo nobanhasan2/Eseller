@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "267946192291",
+    "project_id": "esellerapp",
+    "storage_bucket": "esellerapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:267946192291:android:bd51143a5370ed9dda3e16",
+        "android_client_info": {
+           "package_name": "com.ashraful.eseller"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "267946192291-kmorg4gdm6k0te6c7bemvsoj1bo7j4ri.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfpp188pol_835xW2QlY0sICUwn7unm3E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "267946192291-kmorg4gdm6k0te6c7bemvsoj1bo7j4ri.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
