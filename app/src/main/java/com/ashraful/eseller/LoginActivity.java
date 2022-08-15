@@ -84,7 +84,7 @@ public class LoginActivity extends AppCompatActivity
             loadingBar.show();
 
 
-            AllowAccessToAccount(phone, password);
+            AllowAccessToAccount(phone.trim(), password.trim());
         }
     }
     private void AllowAccessToAccount(final String phone, final String password)
@@ -102,7 +102,7 @@ public class LoginActivity extends AppCompatActivity
                 {
                     Users usersData = dataSnapshot.child(parentDbName).child(phone).getValue(Users.class);
 
-                    if (usersData.getPhone().equals(Long.parseLong(phone)))
+                    if (usersData.getPhone().equals(phone))
                     {
                         if (usersData.getPassword().equals(password))
                         {
@@ -129,7 +129,13 @@ public class LoginActivity extends AppCompatActivity
                             loadingBar.dismiss();
                             Toast.makeText(LoginActivity.this, "Password is incorrect.", Toast.LENGTH_SHORT).show();
                         }
+                    }else{
+                        loadingBar.dismiss();
+                        Toast.makeText(LoginActivity.this, " is incorrect.", Toast.LENGTH_SHORT).show();
                     }
+                }else {
+                    loadingBar.dismiss();
+                    Toast.makeText(LoginActivity.this, "Invalid User.", Toast.LENGTH_SHORT).show();
                 }
 
             }

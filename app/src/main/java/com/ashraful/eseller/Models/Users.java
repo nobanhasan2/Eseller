@@ -3,14 +3,14 @@ package com.ashraful.eseller.Models;
 public class Users
 {
     private String name, password, image, address;
-    private Long phone;
+    private String phone;
 
     public Users()
     {
 
     }
 
-    public Users(String name, Long phone, String password, String image, String address) {
+    public Users(String name, String phone, String password, String image, String address) {
         this.name = name;
         this.phone = phone;
         this.password = password;
@@ -27,11 +27,11 @@ public class Users
         this.name = name;
     }
 
-    public Long getPhone() {
+    public String getPhone() {
         return phone;
     }
 
-    public void setPhone(Long phone) {
+    public void setPhone(String phone) {
         this.phone = phone;
     }
 
